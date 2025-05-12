@@ -27,8 +27,8 @@ class AzSentimentAnalysis:
                         endpoint, key = res[0], res[1]
                     except:
                         # if it fails it means we are running on streamlit servers
-                        st.secrets["endpoint"]
-                        st.secrets["key"]
+                        endpoint = st.secrets["endpoint"]
+                        key = st.secrets["key"]
                     # no matter what we will always get both "endpoint" and "key"
                     cls._endpoint, cls._key = endpoint, key
                     print(cls._endpoint, cls._key)
