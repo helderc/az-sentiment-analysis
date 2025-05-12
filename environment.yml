@@ -1,9 +1,8 @@
 channels:
   - defaults
-  
+
 dependencies:
   - python=3.11
   - pandas
-  - conda-forge::streamlit=1.22
   - pip:
     - azure-ai-textanalytics=5.3
