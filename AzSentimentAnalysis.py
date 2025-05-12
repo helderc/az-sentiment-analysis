@@ -29,6 +29,7 @@ class AzSentimentAnalysis:
                         # if it fails it means we are running on streamlit servers
                         st.secrets["endpoint"]
                         st.secrets["key"]
+                    # no matter what we will always get both "endpoint" and "key"
                     cls._endpoint, cls._key = endpoint, key
                     print(cls._endpoint, cls._key)
                     cls._instance._init_conn()
