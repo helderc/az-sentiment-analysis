@@ -22,7 +22,10 @@ def infer_sentiment(text: list):
     return res
 
 
-st.title("Sentiment Analysis App")
+with st.columns(3)[1]:
+    st.image("img/sentiment-analysis-app.jpg")
+
+st.header("Sentiment Analysis App")
 
 text_area = st.text_area("Enter text (or copy one or more lines from the sample data:", height=200)
 
