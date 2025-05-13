@@ -30,7 +30,7 @@ Therefore, the line removed was `streamlit=1.22` installed with:
 
 From Azure initial page we went to AI Services to instantiate the Language service. After creating the service, and endpoint and keys are generated and made available.
 
-![Azure Language - Overview](screenshots/az-language-overview.jpg)
+![Azure Language - Overview](img/az-language-overview.jpg)
 
 > [!IMPORTANT]  
 > At the time of this writing the [Free Tier](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/language-service/) allows us to execute 5,000 inferences per month!
