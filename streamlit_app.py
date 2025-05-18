@@ -30,7 +30,10 @@ st.header("Sentiment Analysis App")
 st.markdown("---")
 st.markdown("**Check the repository of this project on GitHub: https://github.com/helderc/az-sentiment-analysis**")
     #("", icon="👨‍🏫")
-st.error('If you see error "[Errno 11001] getaddrinfo failed" it means that the Azure AI Cognitive Service was disabled to stay within the free tier.', icon="⚠️")
+st.error('''
+         If you see error "azure.core.exceptions.ServiceRequestError" it means that
+         the Azure AI Cognitive Service was disabled to stay within the free tier.''', 
+        icon="⚠️")
 st.markdown("---")
 
 text_area = st.text_area("Enter text (or copy one or more lines from the sample data:", height=200)
